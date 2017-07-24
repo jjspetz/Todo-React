@@ -110,5 +110,5 @@ Column.propTypes = {
   place: PropTypes.number
 };
 
-Column = DropTarget(ItemTypes.TASK, dropTask, collect)(Column)
-export default connect(mapStateToProps, mapDispatchToProps)(Column)
+var myColumn = DropTarget(ItemTypes.TASK, dropTask, collect)(Column)
+export default connect(mapStateToProps, mapDispatchToProps)(myColumn)
